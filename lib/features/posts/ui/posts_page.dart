@@ -57,7 +57,8 @@ class _PostsPageState extends State<PostsPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(successState.posts[index].title),
+                            Text('${index+1}'),
+                            Text(successState.posts[index].title,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
                             Text(successState.posts[index].body)
                           ],
                         ),
